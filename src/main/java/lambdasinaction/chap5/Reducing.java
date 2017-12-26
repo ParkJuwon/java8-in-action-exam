@@ -17,7 +17,7 @@ public class Reducing{
         int sum2 = numbers.stream().reduce(0, Integer::sum);
         System.out.println(sum2);
 
-        int max = numbers.stream().reduce(0, (a, b) -> Integer.max(a, b));
+        int max = numbers.stream().reduce(0, Integer::max);
         System.out.println(max);
 
         Optional<Integer> min = numbers.stream().reduce(Integer::min);
